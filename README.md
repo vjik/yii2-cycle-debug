@@ -17,12 +17,28 @@ The preferred way to install this extension is through [composer](https://getcom
 composer require vjik/yii2-cycle-debug --dev
 ```
 
+Config logger in container:
+
+```php
+use yii\helpers\ArrayHelper;
+…
+'container' => [
+    'singletons' => ArrayHelper::merge(
+        require __DIR__ . '/../../vendor/vjik/yii2-cycle/config/common.php',
+        [
+            'DebugOrmLogger' => new \Vjik\Yii2\Cycle\Debug\LoggerFactory(),
+            …
+        ]
+    ),
+],
+```
+
 Add logger to Cycle ORM config:
 
 ```php
 'vjik/yii2-cycle' => [
     'dbal' => [
-        'query-logger' => new \Vjik\Yii2\Cycle\Debug\LoggerFactory(),
+        'query-logger' => 'DebugOrmLogger',
         …
     ],
     …
