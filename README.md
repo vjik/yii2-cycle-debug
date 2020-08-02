@@ -12,7 +12,7 @@
 The preferred way to install this extension is through [composer](https://getcomposer.org/download/):
 
 ```
-composer require vjik/yii2-cycle-debug
+composer require vjik/yii2-cycle-debug --dev
 ```
 
 Add logger to Cycle ORM config:
