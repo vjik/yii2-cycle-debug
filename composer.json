@@ -21,14 +21,13 @@
         "issues": "https://github.com/vjik/yii2-cycle-debug/issues",
         "source": "https://github.com/vjik/yii2-cycle-debug"
     },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
+    "minimum-stability": "stable",
     "require": {
         "php": "^7.2",
         "ext-mbstring": "*",
-        "yiisoft/yii2-debug": "^2.1",
-        "vjik/yii2-psr-logger-proxy": "@dev",
-        "vjik/yii2-cycle": "@dev"
+        "vjik/yii2-cycle": "^0.1",
+        "vjik/yii2-psr-logger-proxy": "^1.0",
+        "yiisoft/yii2-debug": "^2.1"
     },
     "require-dev": {
     },
@@ -36,6 +35,9 @@
         "psr-4": {
             "Vjik\\Yii2\\Cycle\\Debug\\": "src"
         }
+    },
+    "config": {
+        "sort-packages": true
     },
     "repositories": [
         {
