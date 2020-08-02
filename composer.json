@@ -1,0 +1,46 @@
+{
+    "name": "vjik/yii2-cycle-debug",
+    "description": "Panel \"Cycle ORM\" for Yii2 Debug",
+    "version": "1.0.0",
+    "type": "library",
+    "keywords": [
+        "yii2",
+        "extension",
+        "debug",
+        "cycle",
+        "orm"
+    ],
+    "authors": [
+        {
+            "name": "Sergei Predvoditelev",
+            "email": "sergey.predvoditelev@gmail.com"
+        }
+    ],
+    "license": "BSD-3-Clause",
+    "support": {
+        "issues": "https://github.com/vjik/yii2-cycle-debug/issues",
+        "source": "https://github.com/vjik/yii2-cycle-debug"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.2",
+        "ext-mbstring": "*",
+        "yiisoft/yii2-debug": "^2.1",
+        "vjik/yii2-psr-logger-proxy": "@dev",
+        "vjik/yii2-cycle": "@dev"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Vjik\\Yii2\\Cycle\\Debug\\": "src"
+        }
+    },
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://asset-packagist.org"
+        }
+    ]
+}
