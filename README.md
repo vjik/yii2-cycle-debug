@@ -7,6 +7,8 @@
 [![Latest Stable Version](https://poser.pugx.org/vjik/yii2-cycle-debug/v/stable.png)](https://packagist.org/packages/vjik/yii2-cycle-debug)
 [![Total Downloads](https://poser.pugx.org/vjik/yii2-cycle-debug/downloads.png)](https://packagist.org/packages/vjik/yii2-cycle-debug)
 
+![](https://i.ibb.co/18vqR14/yii2-cycle-debug.png)
+
 ## Installation
 
 The preferred way to install this extension is through [composer](https://getcomposer.org/download/):
