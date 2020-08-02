@@ -14,7 +14,7 @@ class LoggerFactory
         $logger->setDefaultCategory('cycle-orm');
         $logger->setPrepareMessage(function ($message, $context) {
             if (isset($context['elapsed'])) {
-                return 'Query (' . $context['elapsed'] . ' ms):' . "\n" . $message;
+                return 'Query (' . $context['elapsed'] . ' µs):' . "\n" . $message;
             }
             return null;
         });

@@ -133,9 +133,9 @@ class OrmPanel extends Panel
             'queryDuration' => null,
         ];
 
-        if (preg_match('/^Query \(([\d\.]+) ms\):\s+(.*)/us', $message[0], $matches)) {
+        if (preg_match('/^Query \(([\d\.]+) µs\):\s+(.*)/us', $message[0], $matches)) {
             $ormMessage['message'] = $matches[2];
-            $ormMessage['queryDuration'] = (float)$matches[1];
+            $ormMessage['queryDuration'] = (float)$matches[1] * 1000;
             $ormMessage['queryType'] = $this->getQueryType($ormMessage['message']);
         } else {
             $ormMessage['message'] = $message[0];

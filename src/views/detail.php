@@ -46,7 +46,7 @@ echo GridView::widget([
         [
             'attribute' => 'queryDuration',
             'value' => function ($model) {
-                return $model['queryDuration'] !== null ? sprintf('%.5f ms', $model['queryDuration']) : '';
+                return $model['queryDuration'] !== null ? sprintf('%.1f ms', $model['queryDuration']) : '';
             },
             'options' => [
                 'width' => '10%',
