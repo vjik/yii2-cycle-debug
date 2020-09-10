@@ -1,7 +1,7 @@
 {
     "name": "vjik/yii2-cycle-debug",
     "description": "Panel \"Cycle ORM\" for Yii2 Debug",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "type": "library",
     "keywords": [
         "yii2",
@@ -25,7 +25,6 @@
     "require": {
         "php": "^7.2",
         "ext-mbstring": "*",
-        "vjik/yii2-cycle": "^0.1",
         "vjik/yii2-psr-logger-proxy": "^1.0",
         "yiisoft/yii2-debug": "^2.1"
     },
